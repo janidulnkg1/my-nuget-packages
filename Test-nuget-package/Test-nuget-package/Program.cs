@@ -4,15 +4,15 @@ using System.Text;
 
 public class Program
 {
-    public static IKeyProvider YourKeyProviderInstance { get; private set; }
+
 
     public static void Main()
     {
-        // Replace 'YourKeyProviderInstance' with an actual instance of your IKeyProvider implementation.
+        
         IKeyProvider keyProvider = YourKeyProviderInstance;
 
         // Create an instance of the CryptoED class.
-        CryptoED crypto = new CryptoED(keyProvider);
+        CryptoED crypto = new CryptoED(keyProvider); 
 
         // Sample data to encrypt.
         string plaintext = "Hello, World!";
