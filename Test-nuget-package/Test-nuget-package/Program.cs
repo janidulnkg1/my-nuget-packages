@@ -1,4 +1,5 @@
 ﻿using encryption_cl.Key;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Text;
 
@@ -8,8 +9,16 @@ public class Program
 
     public static void Main()
     {
-        
-        IKeyProvider keyProvider = YourKeyProviderInstance;
+
+        // Get the encryption key from the configuration
+        IConfiguration configuration = new ConfigurationBuilder()
+            .SetBasePath(Directory.GetCurrentDirectory())
+            .AddJsonFile("config.json")
+            .Build();
+
+        string encryptionKey = configuration["EncryptionKey"];
+
+        IKeyProvider.SetKey(encryptionKey);
 
         // Create an instance of the CryptoED class.
         CryptoED crypto = new CryptoED(keyProvider); 

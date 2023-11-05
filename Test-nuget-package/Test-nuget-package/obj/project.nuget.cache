@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "JL5TtQx5Qdbv12LoIr+RaK3XXUSUlCZAj8RY9Y075xn8huqeZzTVntM8yPdlJn342NQCaxXBxPRzAMZq2+pvXw==",
+  "dgSpecHash": "H/RDzFpxJVF7PuVFggMJ7BnnXPC31Gf4mcp1V2C9P7zTMMAQZPAMUMI7JgJ5rQOXyGVL3sYutx99YsUYc15VzQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Janidu Lankage\\Documents\\GitHub\\my-nuget-packages\\Test-nuget-package\\Test-nuget-package\\Test-nuget-package.csproj",
   "expectedPackageFiles": [
